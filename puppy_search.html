@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Find the puppies</title>
+    <script src="puppies.js"></script>
+  </head>
+  <body onload="create_puppies();">
+    <div id="congrats" style="display: none">
+      You found all the puppies! Congrats!
+    </div>
+    <div id="inputs_here">
+      <label for="review_count">Number of reviews:</label>
+      <input type="number" id="review_count" min="0" value="0"></input>
+      <div id="reviews_out">Reviews completed: 0</div>
+      <br>
+
+      <label for="question_count">Number of questions completed:</label>
+      <input type="number" id="question_count" min="0" value="0"></input>
+      <div id="questions_out">Questions completed: 0</div>
+
+      <button id="add_questions">Add questions/reviews</button>
+      <div id="guesses_out">You have 0 guesses left.</div>
+      <div id="more_work" style="display: none">Do more reviews or questions to get more guesses.</div>
+    </div>
+    <br>
+    <table id="puppy_table">
+    </table>
+  </body>
+</html>
